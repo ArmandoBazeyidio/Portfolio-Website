@@ -1,0 +1,53 @@
+<!-- Name: Armando Mavova Bazeydio
+     File: Contact.html 
+     Date: 04/11/2023
+     Description: HTML file containing a form that gets a message from the user.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Armando Mavova Bazeydio">
+        <link rel="stylesheet" href="main.css">
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- Background Animation!-->
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content"></div>
+        <div>
+            <nav>
+                <a href="index.html"><img id="home" alt="homeicon" src="images/homeicon.png"></a>
+                <ul id="li">
+                    <li class="navlist"><a href="Projects.html" class="navlink">Projects</a></li>
+                    <li class="navlist"><a href="resume.html" class="navlink">Resume</a></li>
+                    <li class="navlist"><a href="Contact.html" class="navlink">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <div id="whole">
+            <div>
+                <p id="Font">Get in touch with me</p>
+            </div>
+            <div id="contact">
+                <form action="Assignment1form.php" method="post">
+                    <h6>Write me a note</h6>
+                    <input class="textarea" placeholder="Name" type="text" id="Name" name="name" required><br><br>
+            
+                    <input class="textarea" placeholder="Email" type="email" id="email" name="email" required><br><br>
+            
+                    <textarea id="message" placeholder="Message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+                    <input id="submitbutton" type="submit"  value="Send">
+                </form>
+            </div>
+        </div>
+        <div>
+            <footer><p> Armando Mavova Bazeydio 2023&copy; </p></footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,323 @@
+/*   
+     Name: Armando Mavova Bazeydio
+     File: main.css
+     Date: 05/11/2023
+     Description: CSS file styling Projects.html, index.html, 
+     resume.html, Contact.html
+     */
+
+/*BACKGROUND ANIMATION*/
+html {
+    height:100%;
+}
+
+.bg {
+    animation:slide 15s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(221, 221, 221) 50%,white 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:15s;
+}
+
+.bg3 {
+    animation-duration:15s;
+}
+
+@keyframes slide {
+    0% {
+    transform:translateX(-25%);
+    }
+    100% {
+    transform:translateX(25%);
+    }
+}
+
+body {
+    font-size: 30px;
+}
+
+/*INDEX.HTML STYLING*/
+
+
+#li{
+    display: flex;
+    justify-content: end;
+    font-family: 'Lato', sans-serif;
+}
+
+.navlist{
+    display: inline; 
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#home{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+
+}
+
+#self{
+    margin: 90px 0 0 40px;
+    height: 350px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px; 
+    box-shadow: 10px 10px 1px black;
+    transition: transform 0.3s ease;
+}
+
+.name{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-left: 50px;
+    
+
+}
+
+.description{
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 50px;
+}
+
+
+#middle{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#bottom{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#imgbottom {
+    max-width: 50%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+.homeimages{
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#bottom > img:hover{
+    transform: scale(1.1);
+        box-shadow: 10px 10px 1px black;
+}
+#bottom > h2{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#bottom > p{
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+footer{
+    font-size: small;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+span{
+    font-weight: bold;
+}
+.li2{
+    list-style-type: none;
+    padding: 0;
+}
+
+.li2 > p{
+    font-family: 'Fira Sans', sans-serif;
+
+}
+#self:hover{
+    transform: scale(1.1);
+}
+
+.navlist:hover{
+    transform: scale(1.1);
+}
+
+#home:hover{
+    transform: scale(1.1);
+}
+
+/* Media query for mobile devices*/
+@media screen and (max-width: 600px) {
+    #li {
+        flex-direction: column; 
+    }
+
+    .navlist {
+        margin: 10px 0; 
+    }
+
+    #home {
+        position: static; 
+        margin-bottom: 10px; 
+        width: auto; 
+        height: auto; 
+    }
+}
+
+/*CONTACT.HTML STYLING*/
+
+#home2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+
+}
+#home2:hover{
+    transform: scale(1.1);
+}
+
+#whole{
+    margin-top: 90px;
+}
+#contact{
+    color: white;
+    background-color: rgb(43, 42, 42);
+    padding: 20px 0 60px 100px;
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 1px 2px 1px black;
+    width: 520px;
+    margin-bottom: 100px;  
+    border-radius: 3px;
+}
+
+#Font{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+}
+
+#message{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.textarea{
+    height: 35px;
+    width: 250px;
+    padding-top: 4px;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+#submitbutton{
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    background:#ffffff;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius:3px;
+    transition: transform 0.3s ease;
+}
+
+#submitbutton:hover{
+    transform: scale(1.1);
+}
+
+/* PROJECT.HTML STYLYING*/
+
+.container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+.project{
+    text-align: center;
+    
+}
+
+#projecth1{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    background:#ffffff;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius:3px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    border: 1.5px solid black;
+}
+.project > h2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.project > p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.projectimg{
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease;
+
+}
+
+.projectimg:hover{
+    transform: scale(1.1);
+}
+
+/* RESUME.HTML STYLING */
+
+.fieldsett{
+    background-color: #ffffff;
+}
+
+fieldset > header{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.summary, .work, .skills, .education{
+    font-family: 'Space Grotesk', sans-serif;
+}
